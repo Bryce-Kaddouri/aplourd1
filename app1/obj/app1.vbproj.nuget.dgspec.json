@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bricr\\Source\\Repos\\aplourd1git\\app1\\app1.vbproj": {}
+    "C:\\Users\\bricr\\source\\repos\\aplourd1git\\app1\\app1.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\bricr\\Source\\Repos\\aplourd1git\\app1\\app1.vbproj": {
+    "C:\\Users\\bricr\\source\\repos\\aplourd1git\\app1\\app1.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bricr\\Source\\Repos\\aplourd1git\\app1\\app1.vbproj",
+        "projectUniqueName": "C:\\Users\\bricr\\source\\repos\\aplourd1git\\app1\\app1.vbproj",
         "projectName": "app1",
-        "projectPath": "C:\\Users\\bricr\\Source\\Repos\\aplourd1git\\app1\\app1.vbproj",
+        "projectPath": "C:\\Users\\bricr\\source\\repos\\aplourd1git\\app1\\app1.vbproj",
         "packagesPath": "C:\\Users\\bricr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bricr\\Source\\Repos\\aplourd1git\\app1\\obj\\",
+        "outputPath": "C:\\Users\\bricr\\source\\repos\\aplourd1git\\app1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

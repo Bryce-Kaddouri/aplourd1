@@ -29,35 +29,39 @@ Partial Class Form1
         '
         'txt_login
         '
-        Me.txt_login.Location = New System.Drawing.Point(71, 164)
+        Me.txt_login.Location = New System.Drawing.Point(81, 219)
+        Me.txt_login.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt_login.Name = "txt_login"
-        Me.txt_login.Size = New System.Drawing.Size(248, 23)
+        Me.txt_login.Size = New System.Drawing.Size(283, 27)
         Me.txt_login.TabIndex = 0
         '
         'txt_mdp
         '
-        Me.txt_mdp.Location = New System.Drawing.Point(71, 227)
+        Me.txt_mdp.Location = New System.Drawing.Point(81, 303)
+        Me.txt_mdp.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt_mdp.Name = "txt_mdp"
-        Me.txt_mdp.Size = New System.Drawing.Size(248, 23)
+        Me.txt_mdp.Size = New System.Drawing.Size(283, 27)
         Me.txt_mdp.TabIndex = 1
         '
         'btn_login
         '
-        Me.btn_login.Location = New System.Drawing.Point(71, 343)
+        Me.btn_login.Location = New System.Drawing.Point(81, 457)
+        Me.btn_login.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btn_login.Name = "btn_login"
-        Me.btn_login.Size = New System.Drawing.Size(248, 32)
+        Me.btn_login.Size = New System.Drawing.Size(283, 43)
         Me.btn_login.TabIndex = 2
         Me.btn_login.Text = "Login"
         Me.btn_login.UseVisualStyleBackColor = True
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(390, 450)
+        Me.ClientSize = New System.Drawing.Size(446, 600)
         Me.Controls.Add(Me.btn_login)
         Me.Controls.Add(Me.txt_mdp)
         Me.Controls.Add(Me.txt_login)
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)

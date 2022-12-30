@@ -1,5 +1,4 @@
 ﻿Public Class Projet
-    Implements IEquatable(Of Projet)
 
     Private _id As Integer
     Private _titre As String
@@ -12,7 +11,7 @@
 
 
 
-    Private Property Id As Integer
+    Public Property Id As Integer
         Get
             Return _id
         End Get
@@ -21,7 +20,7 @@
         End Set
     End Property
 
-    Private Property Titre As String
+    Public Property Titre As String
         Get
             Return _titre
         End Get
@@ -30,7 +29,15 @@
         End Set
     End Property
 
-    Private Property Descritption As String
+    Public Property Description As String
+        Get
+            Return _description
+        End Get
+        Set(value As String)
+            _description = value
+        End Set
+    End Property
+    Public Property Descritption As String
         Get
             Return _description
         End Get
@@ -39,7 +46,7 @@
         End Set
     End Property
 
-    Private Property Image As String
+    Public Property Image As String
         Get
             Return _image
         End Get
@@ -48,7 +55,7 @@
         End Set
     End Property
 
-    Private Property IdUser As Integer
+    Public Property IdUser As Integer
         Get
             Return _idUser
         End Get
@@ -56,7 +63,7 @@
             _idUser = value
         End Set
     End Property
-    Private Property DateDebut As String
+    Public Property DateDebut As String
         Get
             Return _dateDebut
         End Get
@@ -65,7 +72,7 @@
         End Set
     End Property
 
-    Private Property DateFin As String
+    Public Property DateFin As String
         Get
             Return _dateFin
         End Get
@@ -76,15 +83,19 @@
 
 
     Public Sub New(id As Integer, titre As String, descritption As String, image As String, idUser As Integer, dateDebut As String, dateFin As String)
-        _id = id
-        _titre = titre
-        _description = descritption
-        _image = image
-        _idUser = idUser
-        _dateDebut = dateDebut
-        _dateFin = dateFin
+        Me.Id = id
+        Me.Titre = titre
+        Me.Descritption = descritption
+        Me.Image = image
+        Me.IdUser = idUser
+        Me.DateDebut = dateDebut
+        Me.DateFin = dateFin
 
     End Sub
+
+
+
+
 
 
 End Class

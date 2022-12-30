@@ -62,10 +62,9 @@ Public Class Database
         End If
     End Function
 
-    Public Function getProjetsByUser(Iduser As Integer) As Collection
+    Public Function getProjetsByUser(Iduser As Integer) As List(Of Projet)
         Dim db As New Database()
-        Dim projets As Collection
-        projets = New Collection()
+        Dim projets As New List(Of Projet)()
         Dim i As Integer = 0
 
         If OpenConnection() Then
@@ -78,13 +77,8 @@ Public Class Database
 
             ' Si l'utilisateur a été trouvé, retournez True
             While reader.Read()
-
-                Dim projet As Projet
-
-                projet = New Projet(reader.GetInt32(0), reader.ToString(1), reader.ToString(2), reader.ToString(3))
-                projets.Add(projet)
+                projets.Add(New Projet(reader.GetInt32(0), reader.ToString(1), reader.ToString(2), reader.ToString(3), reader.GetInt32(4), reader.ToString(5), reader.ToString(6)))
             End While
-
             Return projets
 
         Else
