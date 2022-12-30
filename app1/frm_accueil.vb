@@ -47,4 +47,10 @@ Public Class frm_accueil
             MsgBox("Erreur lors de l'ajout du projet!")
         End If
     End Sub
+
+    Private Sub cmb_projet_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_projet.SelectedIndexChanged
+        Dim test As String = cmb_projet.SelectedItem
+        MsgBox("test : " & test)
+
+    End Sub
 End Class
