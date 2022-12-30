@@ -26,6 +26,12 @@ Partial Class frm_accueil
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.cmb_projet = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.txt_titre = New System.Windows.Forms.TextBox()
+        Me.txt_dateDebut = New System.Windows.Forms.TextBox()
+        Me.rtxt_desc = New System.Windows.Forms.RichTextBox()
+        Me.btn_valider = New System.Windows.Forms.Button()
+        Me.btn_annuler = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -69,11 +75,67 @@ Partial Class frm_accueil
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Choix du projet :"
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.Button1.Location = New System.Drawing.Point(1195, 61)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(117, 35)
+        Me.Button1.TabIndex = 4
+        Me.Button1.Text = " + Nouveau"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'txt_titre
+        '
+        Me.txt_titre.Location = New System.Drawing.Point(369, 156)
+        Me.txt_titre.Name = "txt_titre"
+        Me.txt_titre.Size = New System.Drawing.Size(777, 27)
+        Me.txt_titre.TabIndex = 5
+        '
+        'txt_dateDebut
+        '
+        Me.txt_dateDebut.Location = New System.Drawing.Point(369, 362)
+        Me.txt_dateDebut.Name = "txt_dateDebut"
+        Me.txt_dateDebut.Size = New System.Drawing.Size(777, 27)
+        Me.txt_dateDebut.TabIndex = 9
+        '
+        'rtxt_desc
+        '
+        Me.rtxt_desc.Location = New System.Drawing.Point(369, 207)
+        Me.rtxt_desc.Name = "rtxt_desc"
+        Me.rtxt_desc.Size = New System.Drawing.Size(777, 109)
+        Me.rtxt_desc.TabIndex = 10
+        Me.rtxt_desc.Text = ""
+        '
+        'btn_valider
+        '
+        Me.btn_valider.Location = New System.Drawing.Point(369, 528)
+        Me.btn_valider.Name = "btn_valider"
+        Me.btn_valider.Size = New System.Drawing.Size(254, 41)
+        Me.btn_valider.TabIndex = 11
+        Me.btn_valider.Text = "valider"
+        Me.btn_valider.UseVisualStyleBackColor = True
+        '
+        'btn_annuler
+        '
+        Me.btn_annuler.Location = New System.Drawing.Point(892, 528)
+        Me.btn_annuler.Name = "btn_annuler"
+        Me.btn_annuler.Size = New System.Drawing.Size(254, 41)
+        Me.btn_annuler.TabIndex = 12
+        Me.btn_annuler.Text = "annuler"
+        Me.btn_annuler.UseVisualStyleBackColor = True
+        '
         'frm_accueil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1457, 809)
+        Me.Controls.Add(Me.btn_annuler)
+        Me.Controls.Add(Me.btn_valider)
+        Me.Controls.Add(Me.rtxt_desc)
+        Me.Controls.Add(Me.txt_dateDebut)
+        Me.Controls.Add(Me.txt_titre)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.cmb_projet)
         Me.Controls.Add(Me.Panel1)
@@ -91,4 +153,10 @@ Partial Class frm_accueil
     Friend WithEvents Panel1 As Panel
     Friend WithEvents cmb_projet As ComboBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents txt_titre As TextBox
+    Friend WithEvents txt_dateDebut As TextBox
+    Friend WithEvents rtxt_desc As RichTextBox
+    Friend WithEvents btn_valider As Button
+    Friend WithEvents btn_annuler As Button
 End Class

@@ -86,4 +86,21 @@ Public Class Database
         End If
     End Function
 
+    Public Function addProject(titre As String, description As String, idUser As Integer) As Boolean
+        If OpenConnection() Then
+            Dim command As New MySqlCommand("INSERT INTO projet (titre, description, dateDebut, idUser) VALUES (@titre, @description, NOW(), @idUser);", GetConnection())
+            command.Parameters.AddWithValue("@titre", titre)
+            command.Parameters.AddWithValue("@description", description)
+            command.Parameters.AddWithValue("@idUser", idUser)
+
+            Dim reader As MySqlDataReader = command.ExecuteReader()
+            reader.Close()
+            CloseConnection()
+            Return True
+        Else
+            Return False
+        End If
+    End Function
+
+
 End Class
