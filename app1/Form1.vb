@@ -8,11 +8,11 @@ Public Class Form1
         Dim projects As Collection
 
         user = db.TryLogin(txt_login.Text, txt_mdp.Text)
-        projects = db.getProjetsByUser(user.Id)
+        ' projects = db.getProjetsByUser(user.Id)
         If user IsNot Nothing Then
             MessageBox.Show("Connexion réussie!" & user.Id)
             Me.Hide()
-            LoadFormAccueil(user, projects)
+            LoadFormAccueil(user)
 
 
 
@@ -23,12 +23,12 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub LoadFormAccueil(usr As User, prjts As Collection)
+    Private Sub LoadFormAccueil(usr As User)
         Dim frm As New frm_accueil()
         frm.Label1.Text = usr.Nom & " " & usr.Prenom
-        While prjts.Count > 0
-            MsgBox(prjts.Item(1).ToString)
-        End While
+        '  While prjts.Count > 0
+        'MsgBox(prjts.Item(1).ToString)
+        ' End While
         frm.Show()
     End Sub
 End Class

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brand\\source\\repos\\app1\\app1\\app1.vbproj": {}
+    "C:\\Users\\bricr\\Source\\Repos\\aplourd1git\\app1\\app1.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\brand\\source\\repos\\app1\\app1\\app1.vbproj": {
+    "C:\\Users\\bricr\\Source\\Repos\\aplourd1git\\app1\\app1.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brand\\source\\repos\\app1\\app1\\app1.vbproj",
+        "projectUniqueName": "C:\\Users\\bricr\\Source\\Repos\\aplourd1git\\app1\\app1.vbproj",
         "projectName": "app1",
-        "projectPath": "C:\\Users\\brand\\source\\repos\\app1\\app1\\app1.vbproj",
-        "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brand\\source\\repos\\app1\\app1\\obj\\",
+        "projectPath": "C:\\Users\\bricr\\Source\\Repos\\aplourd1git\\app1\\app1.vbproj",
+        "packagesPath": "C:\\Users\\bricr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bricr\\Source\\Repos\\aplourd1git\\app1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\brand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bricr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
